@@ -1,0 +1,18 @@
+archivo = open('hola2.txt')
+frase = archivo.read()
+frase= frase.split()
+archivo.close()
+
+foriginal="el nino tiene la pelota"
+foriginal =foriginal.split()
+
+a=len(frase)
+
+auxiliar= [None]*a
+
+for i in range(0,len(foriginal)):
+    for j in range(0,len(foriginal)):
+        if frase [i] == foriginal[j]:
+            auxiliar[j]=frase[i]
+
+    print(auxiliar)
